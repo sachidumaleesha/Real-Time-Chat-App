@@ -44,7 +44,7 @@ export const signup = async (req, res) => {
         profilePic: newUser.profilePic,
       });
     } else {
-      res.status(400).json({ error: "Internal User Data" });
+      res.status(400).json({ error: "Invalid User Data" });
     }
   } catch (error) {
     console.log("[Error in Signup Controller]", error);
